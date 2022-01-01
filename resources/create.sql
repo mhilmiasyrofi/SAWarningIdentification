@@ -1,6 +1,6 @@
-drop schema if exists staticwarning;
-create schema staticwarning;
-use staticwarning;
+DROP SCHEMA IF EXISTS staticwarning;
+CREATE SCHEMA staticwarning;
+USE staticwarning;
 
 CREATE TABLE `SAWI_commit_content` (
   `contentId` int(11) NOT NULL,
@@ -17,7 +17,7 @@ CREATE TABLE `SAWI_commit_info` (
   `commitHashId` varchar(255) DEFAULT NULL,
   `commitTime` datetime(6) DEFAULT NULL,
   `issueId` varchar(50) DEFAULT NULL,
-  `issueName` varchar(1000) DEFAULT NULL,
+  `issueName` varchar(2048) DEFAULT NULL,
   `issueType` varchar(20) DEFAULT NULL,
   `developerEmail` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`commitAutoId`)
