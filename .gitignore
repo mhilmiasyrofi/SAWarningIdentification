@@ -2,4 +2,9 @@
 .project
 .settings/
 .vscode/
-extra/
+*.class
+
+classes/
+target-project/
+old-revision/
+log/
